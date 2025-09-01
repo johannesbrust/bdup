@@ -174,7 +174,8 @@ Retrieved September 1, 2025.
 
 [5] Harper, F. Maxwell, & Konstan, J. A. (2015). The MovieLens Datasets: History and Context. ACM Transactions on Interactive Intelligent Systems (TiiS), 5(4), Article 19. https://doi.org/10.1145/2827872
 
-[6] Tang, L., & Liu, H. (2009). Flickr dataset (ASU) [Data set]. Social Computing Data Repository, Arizona State University. Retrieved from Social Computing Data Repository: a network dataset from Flickr — 80,513 users, 5,899,882 friendship edges, and 195 groups
+[6] Tang, L., & Liu, H. (2009). Flickr dataset (ASU) [Data set]. Social Computing Data Repository, Arizona State University. Retrieved from Social Computing Data Repository: https://datasets.syr.edu/datasets/Flickr.html
 
-[7] Leskovec, J., Huttenlocher, D., & Kleinberg, J. (2010). Signed social network dataset: Slashdot Zoo (February 2009) [Data set]. Stanford Large Network Dataset Collection (SNAP). Retrieved from SNAP: soc‑sign‑Slashdot090221
+[7] Leskovec, J., Huttenlocher, D., & Kleinberg, J. (2010). Signed social network dataset: Slashdot Zoo (February 2009) [Data set]. Stanford Large Network Dataset Collection (SNAP). Retrieved from SNAP: 
+https://snap.stanford.edu/data/soc-Slashdot0902.html
 
