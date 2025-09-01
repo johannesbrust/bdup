@@ -14,6 +14,11 @@ The algorithms are typically "thin", i.e. economic, so that
 orthogonal matrices are not explicitly computed but represented in factored
 forms. MATLAB and Python interfaces are provided.
 
+Additionally, two external methods `[2],[3]` were used for numerical comparisons.  
+The data for SuiteSparse experiments `[4]` comes from the SuiteSparse Matrix Collection
+(as of Sept. 25 at https://sparse.tamu.edu/). The MovieLens32M, Flickr and Slashdot
+datasets point to `[5],[6],[7]`.
+
 We ship precompiled binaries for linux 64bit x86, mac 64bit x86 and mac 64bit arm.
 These have been tested on Apple Silicon (Apple M2 Max) with Python 3.10.18 and 
 Matlab R2023b and Intel chips with Python 3 and Matlab . Once the installation is 
@@ -82,6 +87,9 @@ From Matlab one can run the same example using
  error:       3.63798e-12 
 
 ```
+Note that the Matlab implementation may be somewhat faster,
+because of the column major memory layouts in Fortran 
+and Matlab. 
 
 **Compilation from source**
 
@@ -155,4 +163,18 @@ gfortran -shared bhu.o kind_parameter.o -o bhu.dylib
 ```
 
  ## References
-[1] J.J. Brust and M.A. Saunders, Fast and Accurate SVD-Type Updating in Streaming Data, (2025)
+[1] Brust, J.J.  and Saunders, M.A. (2025). Fast and Accurate SVD-Type Updating in Streaming Data
+
+[2] Sung-Eun Jo (2025). Bidiagonalization of a matrix based on Lapack interface (https://www.mathworks.com/matlabcentral/fileexchange/47472-bidiagonalization-of-a-matrix-based-on-lapack-interface), MATLAB Central File Exchange. Retrieved September 1, 2025. 
+
+[3] Deng, H. (2025). IncSVD: Fast Updating Truncated SVD for Representation Learning with Sparse Matrices (ICLR ’24) [Software]. GitHub. https://github.com/HaoranDeng/IncSVD. 
+Retrieved September 1, 2025.
+
+[4] Kolodziej, S. P., Aznaveh, M., Bullock, M., David, J., Davis, T. A., Henderson, M., Hu, Y., & Sandstrom, R. (2019). The SuiteSparse Matrix Collection Website Interface. Journal of Open Source Software, 4(35), 1244. https://doi.org/10.21105/joss.01244
+
+[5] Harper, F. Maxwell, & Konstan, J. A. (2015). The MovieLens Datasets: History and Context. ACM Transactions on Interactive Intelligent Systems (TiiS), 5(4), Article 19. https://doi.org/10.1145/2827872
+
+[6] Tang, L., & Liu, H. (2009). Flickr dataset (ASU) [Data set]. Social Computing Data Repository, Arizona State University. Retrieved from Social Computing Data Repository: a network dataset from Flickr — 80,513 users, 5,899,882 friendship edges, and 195 groups
+
+[7] Leskovec, J., Huttenlocher, D., & Kleinberg, J. (2010). Signed social network dataset: Slashdot Zoo (February 2009) [Data set]. Stanford Large Network Dataset Collection (SNAP). Retrieved from SNAP: soc‑sign‑Slashdot090221
+
