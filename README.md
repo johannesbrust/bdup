@@ -164,6 +164,21 @@ gfortran -shared bidiagup.o givens.o kind_parameter.p -o bidiagup.dylib
 gfortran -shared bhu.o kind_parameter.o -o bhu.dylib
 ```
 
+You can now call these algortihms like
+
+```
+B1, Q1, Q2, Q3, P1, P2 = bgu(B, w, p, 'F')
+
+BUP = np.column_stack([np.diag(B[:n, :n]), np.append(np.diag(B[:n, :n], k=1), 0)])
+B1h, Y, W = bhu(BUP, w, p, n)
+```
+
+Observe the optional parameter `'F'`, which can be used to specify the memory layout.
+The default is `'C'`, i.e., row major layout as in Python, however `'F'` is a bit 
+faster because of Fortran interface. If you intend to form orthgonal matrices 
+from `Q1, Q2, Q3, P1, P2` using `bgu_mulq` and `bgu_mulp` then use the Fortran memory layout.
+Have a look at the example files for some use cases.
+
  ## References
 [1] Brust, J.J.  and Saunders, M.A. (2025). Fast and Accurate SVD-Type Updating in Streaming Data
 
