@@ -14,11 +14,6 @@ The algorithms are typically "thin", i.e. economic, so that
 orthogonal matrices are not explicitly computed but represented in factored
 forms. MATLAB and Python interfaces are provided.
 
-Additionally, two external methods `[2],[3]` were used for numerical comparisons.  
-The data for SuiteSparse experiments `[4]` comes from the SuiteSparse Matrix Collection
-(as of Sept. 25 at https://sparse.tamu.edu/). The MovieLens32M, Flickr and Slashdot
-datasets point to `[5],[6],[7]`.
-
 We ship precompiled binaries for linux 64bit x86, mac 64bit x86 and mac 64bit arm.
 These have been tested on Apple Silicon (Apple M2 Max) with Python 3.10.18 and 
 Matlab R2023b and Intel chips with Python 3 and Matlab . Once the installation is 
@@ -87,11 +82,16 @@ From Matlab one can run the same example using
  error:       3.63798e-12 
 
 ```
-Note that the Matlab implementation may be somewhat faster,
-because of the column major memory layouts in Fortran 
-and Matlab. Note also that there are two additional
-examples in PYTHON/ including one in which the new algorithms
-are used to update all singular values of matrix.
+Note that the Matlab implementation may be somewhat faster. 
+Note also that there are two additional examples in PYTHON/ 
+including one in which the new algorithms are used to update all 
+singular values of matrix.
+
+Finally, the manuscript includes two external methods `[2],[3]` for numerical comparisons. 
+The data for SuiteSparse experiments `[4]` comes from the SuiteSparse Matrix Collection
+(as of Sept. 25 at https://sparse.tamu.edu/). The MovieLens32M, Flickr and Slashdot
+datasets were obtained from `[5],[6],[7]`.
+
 
 **Compilation from source**
 
