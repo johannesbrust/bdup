@@ -167,6 +167,8 @@ gfortran -shared bhu.o kind_parameter.o -o bhu.dylib
 You can now call these algortihms like
 
 ```
+import numpy as np
+
 B1, Q1, Q2, Q3, P1, P2 = bgu(B, w, p, 'F')
 
 BUP = np.column_stack([np.diag(B[:n, :n]), np.append(np.diag(B[:n, :n], k=1), 0)])
