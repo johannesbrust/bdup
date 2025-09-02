@@ -24,7 +24,7 @@ These have been tested on Apple Silicon (Apple M2 Max) with Python 3.10.18 and
 Matlab R2023b and Intel chips with Python 3 and Matlab . Once the installation is 
 complete you can run an example in Python like:
 
-``python python_example.py``
+``python example_python.py``
 
 ```
 ***************** Bidiag update *******************
@@ -57,7 +57,7 @@ complete you can run an example in Python like:
 
 From Matlab one can run the same example using
 
-``>> matlab_example``
+``>> example_matlab``
 
 ```
 ***************** Bidiag update ******************* 
@@ -89,7 +89,9 @@ From Matlab one can run the same example using
 ```
 Note that the Matlab implementation may be somewhat faster,
 because of the column major memory layouts in Fortran 
-and Matlab. 
+and Matlab. Note also that there are two additional
+examples in PYTHON/ including one in which the new algorithms
+are used to update all singular values of matrix.
 
 **Compilation from source**
 
