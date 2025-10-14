@@ -82,7 +82,7 @@ From Matlab one can run the same example using
  error:       3.63798e-12 
 
 ```
-Note that the Matlab implementation may be somewhat faster. 
+Note that the Matlab interface may be somewhat faster. 
 Note also that there are two additional examples in PYTHON/ 
 including one in which the new algorithms are used to update all 
 singular values of matrix.
