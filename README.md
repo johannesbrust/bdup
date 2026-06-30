@@ -90,7 +90,7 @@ singular values of matrix.
 Finally, the manuscript includes two external methods `[2],[3]` for numerical comparisons. 
 The data for SuiteSparse experiments `[4]` comes from the SuiteSparse Matrix Collection
 (as of Sept. 25 at https://sparse.tamu.edu/). The MovieLens32M, Flickr and Slashdot
-datasets were obtained from `[5],[6],[7]`.
+datasets were obtained from `[5],[6],[7]`. For subspace tracking experiments we use [8] and [9]
 
 
 **Compilation from source**
@@ -198,3 +198,6 @@ Retrieved September 1, 2025.
 [7] Leskovec, J., Huttenlocher, D., & Kleinberg, J. (2010). Signed social network dataset: Slashdot Zoo (February 2009) [Data set]. Stanford Large Network Dataset Collection (SNAP). Retrieved from SNAP: 
 https://snap.stanford.edu/data/soc-Slashdot0902.html
 
+[8] L. Balzano, "GROUSE: Grassmannian Rank-One Update Subspace Estimation," University of Michigan, 2010. [Online]. Available: https://web.eecs.umich.edu/~girasole/?p=110. Accessed: Jun. 30, 2026.
+
+[9] niniwzw, "grasta: GRASTA (Grassmannian Robust Adaptive Subspace Tracking Algorithm)," GitHub repository, 2018. [Online]. Available: https://github.com/niniwzw/grasta. Accessed: Jun. 30, 2026.
